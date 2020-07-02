@@ -97,7 +97,7 @@ class W3tc_Tools_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/w3tc-tools-public.js', array( 'jquery' ), $this->version, false );
-
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/ajax.js', array( 'jquery' ), $this->version, false );
 	}
 
 }

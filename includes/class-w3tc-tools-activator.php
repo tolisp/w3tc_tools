@@ -31,6 +31,12 @@ class W3tc_Tools_Activator {
 	 */
 	public static function activate() {
 
+		if (!defined('W3TC')) {
+
+			die('You need to install W3TC Cache plugin!');
+
+		}
+
 	}
 
 }
