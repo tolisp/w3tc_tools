@@ -737,13 +737,3 @@ function publish_purge_ajax(){
 
     die();
 }
-
-
-add_action( 'admin_init', 'purge_script_enqueuer' );
-
-function purge_script_enqueuer() {
-   wp_register_script( "purge_cache_script", get_template_directory_uri().'/hooks/cache/purge_ajax.js', array('jquery') );
-   wp_localize_script( 'purge_cache_script', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));        
-   wp_enqueue_script( 'purge_cache_script' );
-
-}

@@ -33,7 +33,7 @@ class W3tc_Tools_Activator {
 
 		if (!defined('W3TC')) {
 
-			die('You need to install W3TC Cache plugin!');
+			die('You need to install W3TC Cache plugin before activating this plugin!');
 
 		}
 
